@@ -13,7 +13,6 @@ class Dog
     @@all.clear 
   end
   def self.print_all 
-    print sel
+   @@all.map  {|String| string.print } 
   end 
-end
 end
