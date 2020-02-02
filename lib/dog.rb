@@ -2,7 +2,6 @@ class Dog
   attr_accessor :name 
   @@all = []
   def initialize(name)
-  @@all = []
   @name = name 
   @@all << self
    end
@@ -16,7 +15,8 @@ class Dog
   def self.print_all 
     @@all.map {|i| puts i.name}
     def save 
-     
+     @@all = []
+     @@all << self 
     end 
     end 
 end
