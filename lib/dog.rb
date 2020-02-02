@@ -3,8 +3,6 @@ class Dog
   @@all = []
   def initialize(name)
   @name = name 
-  @@all << self
-  
    end
   
   def self.all 
@@ -16,7 +14,6 @@ class Dog
   def self.print_all 
     @@all.map {|i| puts i.name}
     def save 
-     
      @@all << self 
     end 
     end 
